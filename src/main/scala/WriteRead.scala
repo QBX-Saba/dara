@@ -9,7 +9,7 @@ object WriteRead extends App {
 
   val spark = SparkSession.builder
     .appName("Datastax Scala example")
-    .enableHiveSupport().config("spark.cores.max","N")
+    .enableHiveSupport().config("spark.cores.max","1")
     .getOrCreate()
 
   import spark.implicits._
